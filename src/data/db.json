@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "name": "AdminPro",
+      "phone": "123456789",
+      "password": "admin",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "id": "3884",
+      "username": "aaaa",
+      "password": "admin2024",
+      "email": "aaaa@aaa.aaa",
+      "phone": "123123",
+      "name": "Nguyen Van A",
+      "role": "user"
+    },
+    {
+      "username": "huanyh21111",
+      "password": "admin2024",
+      "email": "huan@gmail.oca",
+      "phone": "123123",
+      "name": "Huan Truong 1111111",
+      "role": "user",
+      "id": "00d6"
+    }
+  ],
+  "books": [],
+  "carts": {}
+}
