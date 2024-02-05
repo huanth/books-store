@@ -28,6 +28,55 @@
       "role": "user"
     }
   ],
-  "books": [],
+  "books": [
+    {
+      "id": "1",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 10,
+      "quantity": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL.jpg"
+    },
+    {
+      "id": "2",
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "price": 15,
+      "quantity": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL.jpg"
+    },
+    {
+      "id": "3",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": 20,
+      "quantity": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL.jpg"
+    },
+    {
+      "id": "4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 25,
+      "quantity": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL.jpg"
+    },
+    {
+      "id": "5",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 30,
+      "quantity": 10,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL.jpg"
+    },
+    {
+      "title": "New books111",
+      "author": "HuanTH",
+      "price": 12,
+      "quantity": 12,
+      "image": "https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=612x612&w=gi&k=20&c=_Yaofm8sZLZkKs1eMkv-zhk8K4k5u0g0fJuQrReWfdQ=",
+      "id": "a42d"
+    }
+  ],
   "carts": {}
 }

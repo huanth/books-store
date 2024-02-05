@@ -72,7 +72,7 @@ export class EditComponent {
     // Add default role is user
     this.editForm.value.role = 'user';
 
-    this.usersService.createUser(this.editForm.value).subscribe((res: any) => {
+    this.usersService.updateUser(this.id, this.editForm.value).subscribe((res: any) => {
 
       if (res) {
         info.fire({

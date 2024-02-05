@@ -13,10 +13,6 @@ const routes: Routes = [
     loadChildren: () => import('./book/book.module').then(m => m.BookModule)
   },
   {
-    path: 'shop',
-    loadChildren: () => import('./cart/cart.module').then(m => m.CartModule)
-  },
-  {
     path: 'Admin',
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },

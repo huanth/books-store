@@ -1,1 +1,71 @@
-<p>create works!</p>
+<div class="container">
+  
+    <h1 class="card-title text-center">Create new Book</h1>
+    <form 
+        (ngSubmit)="create()"
+        [formGroup]="createForm"
+        class="row g-3 mt-5"
+    >
+        <div class="mb-3">
+            <label for="exampleInputTitle" class="form-label">Title</label>
+            <input
+            type="text"
+            class="form-control"
+            id="exampleInputTitle"
+            aria-describedby="textlHelp"
+            formControlName="title"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputAuthor" class="form-label">Author</label>
+            <input
+            type="text"
+            class="form-control"
+            id="exampleInputAuthor"
+            aria-describedby="textlHelp"
+            formControlName="author"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPrice" class="form-label">Price</label>
+            <input
+            type="number"
+            class="form-control"
+            id="exampleInputPrice"
+            aria-describedby="textlHelp"
+            formControlName="price"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleQTY" class="form-label">QTY</label>
+            <input
+            type="number"
+            class="form-control"
+            id="exampleQTY"
+            aria-describedby="textlHelp"
+            formControlName="quantity"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputImage" class="form-label">Image</label>
+            <input
+            type="url"
+            class="form-control"
+            id="exampleInputImage"
+            formControlName="image"
+            required
+            />  
+        </div>  
+        <button type="submit" class="btn btn-primary w-100">Create</button>
+    
+    </form>
+
+    <a routerLink="/admin/users" class=" mt-2 mb-4 text-center">Back to list Users</a>
+</div>
