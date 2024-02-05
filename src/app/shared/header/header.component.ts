@@ -15,12 +15,10 @@ export class HeaderComponent {
 
   isLogin: string | boolean = '';
   userRole: string = '';
-  totalItemInCart: number = 0;
 
   ngOnInit(): void {
     this.isLogin = localStorage.getItem('loggedIn') == 'true' ? true : false;
     this.userRole = localStorage.getItem('userRole') || '';
-    this.totalItemInCart = parseInt(localStorage.getItem('totalItemInCart') || '0');
 
     this.authService.isLoggedIn().subscribe((value) => {
       if (value) {
@@ -32,11 +30,6 @@ export class HeaderComponent {
       if (value) {
         this.userRole = value;
       }
-    });
-
-    this.cartService.totalItemsInCart().subscribe((value) => {
-      console.log(value);
-      this.totalItemInCart = value.length;
     });
   }
 

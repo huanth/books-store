@@ -20,7 +20,7 @@
         
       </ul>
       <form class="d-flex">
-          <span id="minicart" class="nav-link icon-minicart">Giỏ hàng({{ totalItemInCart }})</span>
+          <a routerLink="/cart" id="minicart" class="nav-link">Giỏ hàng</a>
           
           <span class="nav-link active">Xin chào, Admin</span>
           <a *ngIf="!isLogin" class="nav-link" routerLink="/login">

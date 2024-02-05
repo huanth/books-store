@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <h1>Cart</h1>
+        <div *ngIf="cartItems.length === 0">
+            <p>Your cart is empty</p>
+        </div>
+        <div *ngIf="cartItems.length > 0">
+            <table class="table">
+            <thead>
+                <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartItems">
+                <td>{{ item.title }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.price | currency:'VND' }}</td>
+                <td>{{ (item.price * item.quantity) | currency }}</td>
+                <td>
+                    <button (click)="removeItem(item.id)" class="btn btn-danger">Remove</button>
+                </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="3" class="text-right">Total</td>
+                <td>{{ total | currency }}</td>
+                <td></td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+        </div>
+    </div>
+</div>

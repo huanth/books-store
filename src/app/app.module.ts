@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookModule } from './book/book.module';
 import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
-
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { SharedModule } from './shared/shared.module';
     BookModule,
     AdminModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

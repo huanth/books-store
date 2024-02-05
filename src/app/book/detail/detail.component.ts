@@ -40,6 +40,8 @@ export class DetailComponent {
         // Update the quantity in the cart
         var book_data = {
           bookId: this.id,
+          title: this.book.title,
+          price: this.book.price,
           quantity: res[0].quantity + 1
         };
 
@@ -62,7 +64,7 @@ export class DetailComponent {
         });
       } else {
         // Add the book to the cart
-        this.cartService.addToCart({bookId: this.id, quantity: 1 }).subscribe((res: any) => {
+        this.cartService.addToCart({bookId: this.id, title: this.book.title, price: this.book.price, quantity: 1 }).subscribe((res: any) => {
           Swal.mixin({
             toast: true,
             position: "bottom-end",

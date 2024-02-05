@@ -80,14 +80,25 @@
   ],
   "carts": [
     {
-      "id": "1",
-      "bookId": "1",
-      "quantity": 1
+      "bookId": "5",
+      "title": "To Kill a Mockingbird",
+      "price": 30,
+      "quantity": 5,
+      "id": "0305"
     },
     {
       "bookId": "3",
-      "quantity": 4,
-      "id": "808d"
+      "title": "The Catcher in the Rye",
+      "price": 20,
+      "quantity": 2,
+      "id": "440d"
+    },
+    {
+      "id": "2a08",
+      "bookId": "4",
+      "title": "The Great Gatsby",
+      "price": 25,
+      "quantity": 1
     }
   ]
 }
