@@ -1,0 +1,72 @@
+<div class="container">
+  
+    <h1 class="card-title text-center">Create new User</h1>
+    <form 
+        (ngSubmit)="create()"
+        [formGroup]="createForm"
+        class="row g-3 mt-5"
+    >
+
+        <div class="mb-3">
+            <label for="exampleInputFullname" class="form-label">Full name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="exampleInputUsername"
+            aria-describedby="textlHelp"
+            formControlName="name"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputUsername" class="form-label">Username</label>
+            <input
+            type="text"
+            class="form-control"
+            id="exampleInputUsername"
+            aria-describedby="textlHelp"
+            formControlName="username"
+            required
+            />
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">Email</label>
+            <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail"
+            aria-describedby="textlHelp"
+            formControlName="email"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="examplePhone" class="form-label">Phone</label>
+            <input
+            type="email"
+            class="form-control"
+            id="examplePhone"
+            aria-describedby="textlHelp"
+            formControlName="phone"
+            required
+            />
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+            required
+            />  
+        </div>  
+        <button type="submit" class="btn btn-primary w-100">Create</button>
+    
+    </form>
+
+    <a routerLink="/admin/users" class=" mt-2 mb-4 text-center">Back to list Users</a>
+</div>
