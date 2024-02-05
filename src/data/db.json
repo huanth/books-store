@@ -78,5 +78,16 @@
       "id": "a42d"
     }
   ],
-  "carts": {}
+  "carts": [
+    {
+      "id": "1",
+      "bookId": "1",
+      "quantity": 1
+    },
+    {
+      "bookId": "3",
+      "quantity": 4,
+      "id": "808d"
+    }
+  ]
 }

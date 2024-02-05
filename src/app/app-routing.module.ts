@@ -4,23 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-  },
-  {
-    path: 'book',
-    loadChildren: () => import('./book/book.module').then(m => m.BookModule)
-  },
-  {
-    path: 'Admin',
-    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
-  },
-  {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
+  { path: '', redirectTo: 'book/list', pathMatch: 'full'},
 ];
 
 @NgModule({

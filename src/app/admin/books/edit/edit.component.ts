@@ -32,11 +32,11 @@ export class EditComponent {
       
       this.id = params['id'];
       
-      this.get_user();
+      this.get_book();
     });
   }
 
-  get_user() {
+  get_book() {
     this.booksService.getBookById(this.id).subscribe((res: any) => {
       this.editForm.patchValue({
         title: res.title,
