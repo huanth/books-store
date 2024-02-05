@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -13,7 +13,7 @@ import { UsersService } from '../users.service';
 })
 export class EditComponent {
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router, private usersService: UsersService, private route: ActivatedRoute) { }
+  constructor(private fb: FormBuilder, private router: Router, private usersService: UsersService, private route: ActivatedRoute) { }
 
   editForm!: FormGroup;
   id : string = '';

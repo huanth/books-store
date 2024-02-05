@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
@@ -13,7 +12,7 @@ import { BooksService } from '../books.service';
 })
 export class ListComponent {
 
-  constructor(private http: HttpClient, private router: Router, private BooksService: BooksService) { }
+  constructor(private BooksService: BooksService) { }
 
   books: any = [];
   public confirmDeleteUserID: number = 0;

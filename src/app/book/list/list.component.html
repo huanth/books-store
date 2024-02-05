@@ -1,1 +1,14 @@
-<p>list works!</p>
+<div class="container mt-5">
+  <div class="row">
+    <div *ngFor="let book of books" class="col-sm-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+            <img src="{{ book.image }}" class="card-img-top" alt="...">
+            <a routerLink="/book/detail/{{book.id}}" class="link"><h5 class="card-title">{{book.title}}</h5></a>
+            <p class="card-text">Author: {{book.author}}</p>
+            <span class="price">Price: {{book.price | currency:'VND'}}</span><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -13,7 +13,7 @@ import { UsersService } from '../users.service';
 })
 export class CreateComponent {
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router, private usersService: UsersService) { }
+  constructor(private fb: FormBuilder, private router: Router, private usersService: UsersService) { }
 
   createForm!: FormGroup;
 

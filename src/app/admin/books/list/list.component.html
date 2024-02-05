@@ -18,7 +18,7 @@
                 <th scope="row">{{book.id}}</th>
                 <td>{{book.title}}</td>
                 <td>{{book.author}}</td>
-                <td>{{book.price}}</td>
+                <td>{{book.price | currency:'VND' }}</td>
                 <td>{{book.quantity}}</td>
                 <td>
                     <a routerLink="/admin/books/edit/{{book.id}}" class="btn btn-primary me-3">Edit</a>

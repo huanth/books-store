@@ -17,7 +17,7 @@ import { BookRoutingModule } from './book-routing.module';
   ],
   exports: [
     ListComponent,
-    DetailComponent
+    DetailComponent 
   ]
 })
 export class BookModule { }

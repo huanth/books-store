@@ -13,7 +13,7 @@ import { BooksService } from '../books.service';
 })
 export class EditComponent {
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private router: Router, private booksService: BooksService, private route: ActivatedRoute) { }
+  constructor(private fb: FormBuilder, private router: Router, private booksService: BooksService, private route: ActivatedRoute) { }
 
   editForm!: FormGroup;
   id : string = '';
